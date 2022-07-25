@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/github/workspace/hw/sch_pcb/4XLTO1865V02A.kicad_sch</source>
+    <date>Mon Jul 25 08:19:13 2022</date>
+    <tool>Eeschema 6.0.4-6f826c9f35~116~ubuntu20.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>SOLARMINIBAT01A</title>
+        <company>MLAB.cz</company>
+        <rev>A</rev>
+        <date>2022-07-20</date>
+        <source>4XLTO1865V02A.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value="Solar charged LTO Battery Managment System"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J2">
+      <value>HEADER_2x04_PARALLEL</value>
+      <footprint>Mlab_Pin_Headers:Angled_1x04</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_1x04" description="1x04 2.54 mm pitch header"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="4XLTO1865V02A.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d24f687-79aa-4b8c-8284-b78868812a22</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>HEADER_2x04_PARALLEL</value>
+      <footprint>Mlab_Pin_Headers:Angled_1x04</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_1x04" description="1x04 2.54 mm pitch header"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="4XLTO1865V02A.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b116c81e-2735-4fd0-8690-f9ef8d322648</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="MLAB_HEADER" part="HEADER_1x04">
+      <description>1x04 2.54 mm pitch header</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER_1x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_MECHANICAL" part="HOLE_TF">
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">HOLE_TF</field>
+        <field name="Footprint">Mlab_Mechanical:dira_3mm</field>
+      </fields>
+    </libpart>
+  </libparts>
+  <libraries/>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="J2" pin="1" pintype="input"/>
+      <node ref="J2" pin="2" pintype="input"/>
+      <node ref="J2" pin="3" pintype="input"/>
+      <node ref="J2" pin="4" pintype="input"/>
+      <node ref="J3" pin="1" pintype="input"/>
+      <node ref="J3" pin="2" pintype="input"/>
+      <node ref="J3" pin="3" pintype="input"/>
+      <node ref="J3" pin="4" pintype="input"/>
+    </net>
+  </nets>
+</export>
