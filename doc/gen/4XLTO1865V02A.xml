@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/4XLTO1865V02A.kicad_sch</source>
-    <date>Mon Jul 25 09:59:28 2022</date>
+    <date>Wed Aug 10 08:32:34 2022</date>
     <tool>Eeschema 6.0.4-6f826c9f35~116~ubuntu20.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -42,6 +42,24 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b116c81e-2735-4fd0-8690-f9ef8d322648</tstamps>
     </comp>
+    <comp ref="M5">
+      <value>HOLE</value>
+      <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="4XLTO1865V02A.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>98b00c9d-9188-4bce-aa70-92d12dd9cf82</tstamps>
+    </comp>
+    <comp ref="M6">
+      <value>HOLE</value>
+      <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="4XLTO1865V02A.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>99332785-d9f1-4363-9377-26ddc18e6d2c</tstamps>
+    </comp>
   </components>
   <libparts>
     <libpart lib="MLAB_HEADER" part="HEADER_1x04">
@@ -55,6 +73,15 @@
         <pin num="2" name="" type="input"/>
         <pin num="3" name="" type="input"/>
         <pin num="4" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_MECHANICAL" part="HOLE">
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">HOLE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
       </pins>
     </libpart>
     <libpart lib="MLAB_MECHANICAL" part="HOLE_TF">
@@ -76,6 +103,8 @@
       <node ref="J3" pin="2" pintype="input"/>
       <node ref="J3" pin="3" pintype="input"/>
       <node ref="J3" pin="4" pintype="input"/>
+      <node ref="M5" pin="1" pintype="input"/>
+      <node ref="M6" pin="1" pintype="input"/>
     </net>
   </nets>
 </export>
